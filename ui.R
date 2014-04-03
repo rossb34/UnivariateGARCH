@@ -1,4 +1,3 @@
-
 # This is the user-interface definition of a Shiny web application.
 # You can find out more about building applications with Shiny here:
 # 
@@ -124,9 +123,9 @@ shinyUI(fluidPage(
         tabPanel("Table", tableOutput("view")),
         tabPanel("GARCH Model Forecast", verbatimTextOutput("forecast")),
         tabPanel("Data", 
-                 h4("Selected Data for GARCH Model"),
+                 h4("Selected Data for GARCH Model (displaying first 6 observations)"),
                  verbatimTextOutput("selectedData"),
-                 h4("Available Data"),
+                 h4("Available Data (displaying first 6 observations)"),
                  verbatimTextOutput("rawData")
                  )
       )
